@@ -16,6 +16,10 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+:root {
+  --font-family: 'Arial', sans-serif;
+}
+/* GALLERY */
 .gallery {
   list-style: none;
   width: 1128px;
@@ -35,4 +39,101 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+/* FORM */
+.container {
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 124px;
+  background: #fff;
+}
+.feedback-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 8px;
+  padding: 24px;
+  width: 360px;
+  height: 256px;
+  background: #fff;
+  margin: 0px auto;
+}
+.label-input {
+  display: block;
+  text-align: start;
+  font-size: 16px;
+  width: 360px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.input-form {
+  display: block;
+  margin-top: 5px;
+  width: 360px;
+  height: 40px;
+  padding: auto;
+  padding-left: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.input-form:hover {
+  border: 2px solid #ccc;
+}
+.input-form::placeholder {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.input-form:focus::placeholder {
+  color: #2e2f42;
+}
+.message-form {
+  display: block;
+  margin-top: 5px;
+  width: 360px;
+  height: 80px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.message-form::placeholder {
+  font-family: var(--font-family);
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.message-form:focus::placeholder {
+  color: #2e2f42;
+}
+.message-form:hover {
+  border: 2px solid #ccc;
+}
+.btn-submit {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  background: #4e75ff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+}
+.btn-submit:hover {
+  background: #6c8cff;
 }

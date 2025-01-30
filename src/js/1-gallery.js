@@ -1,7 +1,9 @@
-// Описаний в документації
 import SimpleLightbox from 'simplelightbox';
-// Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.min.css';
+// const lightbox = new SimpleLightbox('.gallery a', {
+//   captionsData: 'alt',
+//   captionDelay: 250,
+// });
 
 const images = [
   {
@@ -79,7 +81,6 @@ const galleryMarkup = images
           <img
             class="gallery-image"
             src="${preview}"
-            // data-source="${original}"
             alt="${description}"
           />
         </a>
@@ -88,22 +89,9 @@ const galleryMarkup = images
   .join('');
 
 galleryContainer.innerHTML = galleryMarkup;
-
-galleryContainer.addEventListener('click', event => {
-  event.preventDefault();
-});
-
-// modal window
-galleryContainer.addEventListener('click', event => {
-  if (event.target.tagName === 'IMG') {
-    // big image
-    const largeImageURL = event.target.dataset.source;
-
-    const instance = basicLightbox.create(`
-			<img src="${largeImageURL}" alt="${event.target.alt}" />
-		`);
-
-    // show modal window
-    instance.show();
-  }
+// import SimpleLightbox from 'simplelightbox';
+// import 'simplelightbox/dist/simple-lightbox.min.css';
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
 });
