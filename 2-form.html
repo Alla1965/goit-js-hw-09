@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <script type="module" crossorigin src="/goit-js-hw-09/assets/styles-CnZrZQS4.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/styles-BaZiWaXc.css">
+    <script type="module" crossorigin src="/goit-js-hw-09/2-form.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/styles-_TaXx7DJ.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/styles-j8e386h-.css">
   </head>
   <body>
     <main>
@@ -14,7 +15,29 @@
         <a class="back-link" href="./index.html">Go back</a>
         <h1 class="main-title">Form</h1>
       </div>
+      <form class="feedback-form" autocomplete="off">
+        <label class="label-input">
+          Email
+          <input
+            class="input-form"
+            type="email"
+            placeholder="Email"
+            name="email"
+            autofocus
+          />
+        </label>
+        <label class="label-input">
+          Message
+          <textarea
+            class="message-form"
+            name="message"
+            placeholder="Message"
+            rows="8"
+          ></textarea>
+        </label>
+        <button class="btn-submit" type="submit">Submit</button>
+      </form>
     </main>
-    <ul class="gallery"></ul>
+
   </body>
 </html>
